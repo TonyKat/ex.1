@@ -29,7 +29,6 @@ def find_fake_question(fake_question,fake_answer):
         if len(fake_question[i]) != len(fake_answer[i]):
             print('Размерность...')
             print('Было вопросов:', len(fake_question[i]))
-            print('Было ответов:', len(fake_answer[i]))
             j = 0
             while j < len(fake_question[i]):
                 if fake_question[i][j] == ('.     \n'):
@@ -37,7 +36,6 @@ def find_fake_question(fake_question,fake_answer):
                     continue
                 j += 1
             print('Стало вопросов:', len(fake_question[i]))
-            print('Стало ответов:', len(fake_answer[i]))
     return fake_question, fake_answer
 
 

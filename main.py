@@ -10,9 +10,7 @@ def html_page(url):
     request = session.get(url)
     return request.text
 
-'''
-    ВАРИАНТ РАБОЧИЙ
-'''
+
 def write_to_file(question, answer, number_file):
     with open('question-answer1\\' + 'file' + str(number_file) + '.txt', 'w', encoding='utf-8') as output_file:
         try:
